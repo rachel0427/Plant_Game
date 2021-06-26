@@ -1,0 +1,58 @@
+# Variable Mapping:
+anger_state: 0 -- happy; 1 -- okay; 2 -- upset; 3 -- furious (explode)
+shelf_pos: 0 -- top shelf; 1 -- middle shelf; 2 -- bottom shelf
+
+# Plant Sell Price
+Good: 50
+Great: 60
+Awesome: 100
+Leek: 50
+
+# Plant Production Price
+Good: 20
+Great: 30
+Awesome: 50
+Leek: 40
+
+# Plant Buy Price
+Good: 20
+Great: 30
+Awesome: 50
+
+# Plant Production cycle
+ALl = 1 (每轮都产出钱)
+
+---------------------------
+---------------------------
+
+Initialization:
+1. shelves all empty
+2. plants all happy, angry level = 0 -> need to be watered in x rounds
+
+Round 1
+1. Initialize shelves to be all empty, then put two level 1(good) plants on middle(???) shelf
+2. Two good plants are happy and need to be watered in 2 rounds
+3. Money = 50(??)
+
+Anger Logic:
+Note: there are 3 mood levels in total, 0 - 2, and when anger rises above that range, plants explode
+1. Anger Level Rise by 1 when: 任意一个发生， 还是叠加？
+    1. vodka not applied when anger level > 0
+    2. plant is moved down one shelf
+    3. leek arrives
+2. Anger Level Drop by 1 when:
+    1. vodka applied when anger level > 0
+    2. plant is moved up one shelf
+    3. leek removed???
+
+Explode Logic: plant only explode when anger level >= 3
+# FIXME: does exploded plant destroy other plants?
+
+vodka bottle class -> input list of plant
+
+1. 怎么拖动，距离怎么算
+2. while loop外面写plant array
+=======
+Variable Mapping:
+anger_state: 0 -- happy; 1 -- okay; 2 -- upset; 3 -- furious
+shelf_pos: 0 -- top shelf; 1 -- middle shelf; 2 -- bottom shelf
