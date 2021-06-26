@@ -56,3 +56,10 @@ vodka bottle class -> input list of plant
 Variable Mapping:
 anger_state: 0 -- happy; 1 -- okay; 2 -- upset; 3 -- furious
 shelf_pos: 0 -- top shelf; 1 -- middle shelf; 2 -- bottom shelf
+
+Anger System:
+1. Placed on shelf - initialize anger state (top - happy, middle - sad, bottom - angry)
+2. Move up/down within round, just add or minus, use cur/prev would be better
+3. next round, if still in top shelf, anger level - 1;
+                  still in middle shelf, anger_level don't change;
+                  still in bottom shelf, anger_level + 1
