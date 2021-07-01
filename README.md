@@ -17,7 +17,7 @@ them from exploding with anger.
 ### You need to have a version of Python on your machine
 Available here: https://www.python.org/downloads/
 
-### First you need to install the pygame library
+### First you need to install the required libraries
 `pip3 install pygame`
 
 ### Now you can run `main.py` from command line
