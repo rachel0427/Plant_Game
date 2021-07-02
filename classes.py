@@ -451,7 +451,7 @@ class GoodPlant:
          Check_good_collision checks for collision between mouse and good plant
         :param mouseX: x coord of mouse position
         :param mouseY: y coord of mouse position
-        :return: boolean value of whether collision occured
+        :return: boolean value of whether collision occurred
         """
         # get a rectangle the size of img
         rectangle = self.img.get_rect()
@@ -671,7 +671,7 @@ class GreatPlant:
 
     def check_great_collision(self, mouseX, mouseY):
         """
-         Check_good_collision checks for collision between mouse and great plant
+         Check_great_collision checks for collision between mouse and great plant
         :param mouseX: x coord of mouse position
         :param mouseY: y coord of mouse position
         :return: boolean value of whether collision occured
@@ -913,7 +913,7 @@ class AwesomePlant:
 
     def check_awesome_collision(self, mouseX, mouseY):
         """
-         Check_good_collision checks for collision between mouse and awesome plant
+         Check_awesome_collision checks for collision between mouse and awesome plant
         :param mouseX: x coord of mouse position
         :param mouseY: y coord of mouse position
         :return: boolean value of whether collision occured
